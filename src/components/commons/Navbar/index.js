@@ -6,6 +6,7 @@ const NavbarWrapper = styled.nav`
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
+    font-weight: 400;
     line-height: 22px;
 
     display: flex;
@@ -15,7 +16,7 @@ const NavbarWrapper = styled.nav`
 
     margin-top: 9px;
     margin-bottom: 9px;
-    /* margin-left: 190px; */
+    width: 169px;
     a {
         /* text-align: center;
         display: block; */

@@ -6,8 +6,8 @@ export const CabecalhoWrapper = styled.nav`
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap; 
-    margin-top: 812px;
-    margin-bottom: 1299px;
+    margin-top: 0;
+    margin-bottom: 0;
     margin-left: 0px;
     height: 40px;
     /* width: 375px; */
