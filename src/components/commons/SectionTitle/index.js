@@ -2,11 +2,14 @@ import React from 'react'
 import styled from 'styled-components'
 
 const SectionTitleWrapper = styled.p`
-    position: absolute;
+    /* position: absolute; */
     width: 233px;
     height: 43px;
     margin-left: 71px;
     margin-right: 71px;
+    margin-bottom: 35px;
+    margin-top: 35px;
+    /* background-color:orange; */
 
     font-family: 'Fira Sans Condensed', sans-serif;
     font-style: normal;
