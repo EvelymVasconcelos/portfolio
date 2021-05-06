@@ -2,6 +2,7 @@ import React from 'react'
 import { CardWrapper } from './styles/CardWrapper'
 import Image from 'next/image'
 import { fill } from 'lodash'
+import Text from '../../fundation/Text'
 
 export default function Card(){
     return (
@@ -19,7 +20,7 @@ export default function Card(){
                     />
                 </div>
                 <CardWrapper.Title>
-                <CardWrapper.Text>Projeto Report</CardWrapper.Text>
+                <Text tag="p" variant="paragraph1">Projeto Report</Text>
                 </CardWrapper.Title>  
             </CardWrapper.CardDestaque>  
             <CardWrapper.CardCenter>
@@ -35,7 +36,7 @@ export default function Card(){
                     />
                 </div>
                 <CardWrapper.Title>
-                <CardWrapper.Text>Projeto Report</CardWrapper.Text>
+                <Text tag="p" variant="paragraph1">Projeto Report</Text>
                 </CardWrapper.Title> 
             </CardWrapper.CardCenter>    
             <CardWrapper.CardRight>
@@ -51,7 +52,7 @@ export default function Card(){
                     />
                 </div>
                 <CardWrapper.Title>
-                <CardWrapper.Text>Projeto Report</CardWrapper.Text>
+                <Text tag="p" variant="paragraph1">Projeto Report</Text>
                 </CardWrapper.Title> 
             </CardWrapper.CardRight>     
             <CardWrapper.CardFinal>
@@ -67,7 +68,7 @@ export default function Card(){
                     />
                 </div>
                 <CardWrapper.Title>
-                <CardWrapper.Text>Projeto Report</CardWrapper.Text>
+                <Text tag="p" variant="paragraph1">Projeto Report</Text>
                 </CardWrapper.Title> 
             </CardWrapper.CardFinal>   
         </CardWrapper>

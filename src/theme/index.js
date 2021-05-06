@@ -1,3 +1,5 @@
+import { typographyVariants } from './typographVariants'
+
 const colors = {
     background: {
         light: {
@@ -24,5 +26,6 @@ const colors = {
 
 export default {
     colors: colors,
+    typographyVariants,
     fontFamily: '\'Fire+Sans\', sans-serif',
 }

@@ -1,29 +1,19 @@
 import React from 'react'
 import styled from 'styled-components'
 import get from 'lodash/get';
+import Text from '../../fundation/Text';
 
-const SectionTitleWrapper = styled.p`
-    /* position: absolute; */
-    width: 233px;
-    height: 43px;
-    margin-left: 71px;
-    margin-right: 71px;
-    margin-bottom: 33px;
-    margin-top: 33px;
-    /* background-color:orange; */
-
-    /* font-family: 'Fira Sans Condensed', sans-serif; */
-    font-style: normal;
-    font-weight: normal;
-    font-size: 26px;
-    line-height: 43px;
-    text-align: center;
-    text-transform: uppercase;
-    color: ${({ theme }) => get(theme, `colors.primary.main.contrastText`)};
+const SectionTitleWrapper = styled.div`
+    width: 100%;
+    margin: 0;
+    padding-bottom: 33px;
+    padding-top: 33px;
 `;
 
 export default function SectionTitle(){
     return (
-        <SectionTitleWrapper>Meus Projetos</SectionTitleWrapper>
+        <SectionTitleWrapper>
+            <Text tag='p' variant='projects'>Meus Projetos</Text>
+        </SectionTitleWrapper>
     )
 }

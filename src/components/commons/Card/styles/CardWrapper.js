@@ -13,17 +13,6 @@ CardWrapper.Title = styled.div`
     margin-top: 18px;
 `;
 
-CardWrapper.Text = styled.p`
-    margin: 0;
-    /* font-family: 'Fira Sans Condensed', sans-serif; */
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 29px;
-    text-align: center;
-    text-transform: capitalize;
-    color: ${({ theme }) => get(theme, `colors.primary.main.contrastText`)};
-`
 CardWrapper.CardDestaque = styled.div`
     /* order: 1; */
     /* width: 100%; */

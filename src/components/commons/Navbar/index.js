@@ -1,14 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
 import get from 'lodash/get';
+import Text from '../../fundation/Text';
 
 const NavbarWrapper = styled.nav`
-    /* font-family: 'Fira Sans Condensed', sans-serif; */
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
+    /* font-style: normal;
+    font-weight: normal; */
+    /* font-size: 18px;
     font-weight: 400;
-    line-height: 22px;
+    line-height: 22px; */
 
     display: flex;
     align-items: center;
@@ -18,21 +18,7 @@ const NavbarWrapper = styled.nav`
     margin-top: 9px;
     margin-bottom: 9px;
     width: 169px;
-    a {
-        /* text-align: center;
-        display: block; */
-        text-decoration: none;
-        color: ${({ theme }) => get(theme, `colors.primary.main.contrastText`)};
-        text-align: center;
-        text-transform: capitalize;
-        /* color: #88989E;
-        transition: 200ms ease-in-out;
-        &:hover,
-        &:focus {
-            font-weight: 500;
-            color: #070C0E;    
-        } */
-    }
+  
     
 `;
 
@@ -52,9 +38,9 @@ export function Navbar(){
             {
                 links.map((link) => (
                     <div key={link.url}>
-                        <a href={link.url}>
+                        <Text tag="a" variant="menu1" href={link.url}>
                         {link.text}
-                        </a>
+                        </Text>
                     </div>
                 ))
             }
