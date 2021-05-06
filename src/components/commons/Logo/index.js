@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import get from 'lodash/get';
 
 const LogoWrapper = styled.div`
     width: 47px;
@@ -15,7 +16,7 @@ const LogoWrapper = styled.div`
     line-height: 22px;
     text-align: center;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: ${({ theme }) => get(theme, `colors.secondary.main.contrastText`)};
 `
 
 export function Logo(){

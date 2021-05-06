@@ -1,8 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
+import get from 'lodash/get';
 
 const NavbarWrapper = styled.nav`
-    font-family: 'Fira Sans Condensed', sans-serif;
+    /* font-family: 'Fira Sans Condensed', sans-serif; */
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -21,7 +22,7 @@ const NavbarWrapper = styled.nav`
         /* text-align: center;
         display: block; */
         text-decoration: none;
-        color: #000000;
+        color: ${({ theme }) => get(theme, `colors.primary.main.contrastText`)};
         text-align: center;
         text-transform: capitalize;
         /* color: #88989E;

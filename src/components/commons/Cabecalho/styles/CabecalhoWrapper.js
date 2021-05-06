@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const CabecalhoWrapper = styled.nav`
-    font-family: 'Fira Sans Condensed', sans-serif;
+    /* font-family: 'Fira Sans Condensed', sans-serif; */
     display: flex;
     align-items: center;
     justify-content: space-between;

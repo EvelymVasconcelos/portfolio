@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, {css} from 'styled-components'
+import get from 'lodash/get';
 
 const CapaWrapper = styled.div`
     height: 812px;
@@ -11,18 +12,19 @@ const CapaWrapper = styled.div`
 
 const CapaText = styled.p`
     position: absolute;
-    font-family: 'Fira Sans Condensed', sans-serif;
+    /* font-family: 'Fira Sans Condensed', sans-serif; */
     text-align: center;
     font-style: normal;
-    color: #000000;
+    color: ${({ theme }) => get(theme, `colors.primary.main.contrastText`)};
     
 
     ${function(props){
         if(props.variant == 'title'){
             return css`
-                width: 273px;
+                width: 100%;
                 height: 154px;
-                margin-left: 51px;
+                /* margin-left: 51px;
+                margin-right: 51px; */
                 margin-top: 304px;
                 
                 font-weight: normal;
@@ -32,9 +34,10 @@ const CapaText = styled.p`
             `
         }else{
             return css`
-                width: 166px;
+                width: 100%;
                 height: 58px;
-                margin-left: 104px;
+                /* margin-left: 104px;
+                margin-right: 104px; */
                 margin-top: 451px;
 
                 font-weight: 300;

@@ -4,7 +4,7 @@ import Card from '../Card';
 import SectionTitle from '../SectionTitle';
 
 const ProjetosWrapper = styled.div`
-    height: 1217px;
+    height: 1231px;
     background-color: white;
 `;
 
