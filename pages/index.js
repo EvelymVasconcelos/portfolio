@@ -8,11 +8,11 @@ import get from 'lodash/get';
 export default function Home() {
   return ( 
     <div style={{
-      flex: '1',
+      // flex: '1',
       display: 'flex',
-      flexWrap: 'wrap',
+      // flexWrap: 'wrap',
       flexDirection: 'column',
-      justifyContent: 'space-between',
+      justifyContent: 'center',
     }}>
       <Capa />
       <Cabecalho />

@@ -1,34 +1,57 @@
-import styled from 'styled-components'
+import styled, {css} from 'styled-components'
+import { breakpointsMedia } from '../../../../theme/utils/breakpointsMedia';
+import { TextStyleVariantsMap } from '../../../fundation/Text';
 
 export const CabecalhoWrapper = styled.nav`
-    /* font-family: 'Fira Sans Condensed', sans-serif; */
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap; 
     margin-top: 0;
     margin-bottom: 0;
-    margin-left: 0px;
-    height: 40px;
-    /* width: 375px; */
-    padding-left: 16px;
-    padding-right: 16px;
     background-color: #FFF8E6;
+    ${breakpointsMedia({
+    xs: css`
+        height: 40px;
+        padding-left: 16px;
+        padding-right: 16px;
+        `,
+    md: css`
+        height: 67px;
+        padding-left: 270px;
+        padding-right: 277px;
+        `,
+    })}
 `;
 
 CabecalhoWrapper.LeftSide = styled.div`
-    padding: 0;
-    margin: 0;
     order: 1;
-    width: 82.73px;
-    height: 40px;
     background-color: #E9C46A;
+    ${breakpointsMedia({
+    xs: css`
+        height: 40px;
+        width: 82.73px;
+        `,
+    md: css`
+        height: 67px;
+        width: 136px;
+        `,
+    })}
 `;
 
 CabecalhoWrapper.RightSide = styled.div`
-    padding: 0;
-    margin: 0;
     order: 2;
-    height: 40px;
-    /* background-color: #E9C46A; */
+    ${breakpointsMedia({
+    xs: css`
+        height: 40px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        width: 175px;
+        `,
+    md: css`
+        height: 67px;
+        padding-top: 17px;
+        padding-bottom: 16px;
+        width: 300px;
+        `,
+    })}
 `;

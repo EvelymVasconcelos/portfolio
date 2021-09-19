@@ -1,33 +1,39 @@
 import React from 'react';
 import styled, {css} from 'styled-components'
 import get from 'lodash/get';
-import Text from '../../fundation/Text';
+import Text, { TextStyleVariantsMap } from '../../fundation/Text';
+import { breakpointsMedia } from '../../../theme/utils/breakpointsMedia';
 
 const CapaWrapper = styled.div`
-    height: 812px;
     width: 100%;
     margin-top: 0;
     margin-bottom: 0;
     background-color: white;
-`;
+    height: 93vh;
 
-const CapaText = styled.div`
-    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     text-align: center;
     font-style: normal;
-    color: ${({ theme }) => get(theme, `colors.primary.main.contrastText`)};
-    margin: 0;
-    padding-top: 304px;
-    width: 100%;
+    text-transform: uppercase; 
+
+    ${breakpointsMedia({
+    xs: css`
+        ${TextStyleVariantsMap.titleXS}
+        `,
+    md: css`
+        ${TextStyleVariantsMap.title}
+        `,
+    })}
 `;
 
 export default function Capa(){
     return (
         <CapaWrapper>
-            <CapaText>
-                <Text tag='p' variant='title'>Evelym Santos</Text>
-                <Text tag='p' variant='subTitle'>Portfolio</Text>
-            </CapaText>
+            Evelym Santos
+            <Text tag="p" variant="subTitle">Portfolio</Text>
         </CapaWrapper>
 
     )

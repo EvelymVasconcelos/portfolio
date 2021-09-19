@@ -1,17 +1,22 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import Card from '../Card';
 import SectionTitle from '../SectionTitle';
+import { TextStyleVariantsMap } from '../../fundation/Text';
+import { breakpointsMedia } from '../../../theme/utils/breakpointsMedia';
 
 const ProjetosWrapper = styled.div`
-    height: 1231px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     background-color: white;
 `;
 
 export default function WrapperProjetos(){
     return (
         <ProjetosWrapper>
-            <SectionTitle>Meus Projetos</SectionTitle>
+            <SectionTitle />
             <Card />
         </ProjetosWrapper>
 

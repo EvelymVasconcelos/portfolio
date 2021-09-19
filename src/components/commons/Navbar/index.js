@@ -1,25 +1,28 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import get from 'lodash/get';
-import Text from '../../fundation/Text';
+import Text, { TextStyleVariantsMap } from '../../fundation/Text';
+import { breakpointsMedia } from '../../../theme/utils/breakpointsMedia';
 
 const NavbarWrapper = styled.nav`
-    /* font-style: normal;
-    font-weight: normal; */
-    /* font-size: 18px;
-    font-weight: 400;
-    line-height: 22px; */
-
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
-
-    margin-top: 9px;
-    margin-bottom: 9px;
-    width: 169px;
-  
-    
+    a {
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        color: ${({ theme }) => get(theme, `colors.primary.main.contrastText`)};
+        text-align: center;
+        text-transform: capitalize;
+        ${breakpointsMedia({
+            xs: css`
+                ${TextStyleVariantsMap.menuXS}
+                `,
+            md: css`
+                ${TextStyleVariantsMap.menu}
+                `,
+        })}
+    }
 `;
 
 export function Navbar(){
@@ -38,9 +41,9 @@ export function Navbar(){
             {
                 links.map((link) => (
                     <div key={link.url}>
-                        <Text tag="a" variant="menu1" href={link.url}>
+                        <a href={link.url}>
                         {link.text}
-                        </Text>
+                        </a>
                     </div>
                 ))
             }

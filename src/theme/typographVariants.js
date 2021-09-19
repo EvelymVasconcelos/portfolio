@@ -1,38 +1,53 @@
 export const typographyVariants = {
     // [title]
-    title: {
+    titleXS: {
       fontSize: '64px',
-      fontWeight: 'normal',
+      fontWeight: '400',
       lineHeight: '77px',
     },
-    // titleXS: {
-    //   fontSize: '24px',
-    //   fontWeight: '500',
-    //   lineHeight: 1.25, // 125%
-    // },
+    title: {
+      fontSize: '90px',
+      fontWeight: '400',
+      lineHeight: '108px', // 125%
+    },
     // [subTitle]
     subTitle: {
       fontSize: '48px',
       fontWeight: '300',
       lineHeight: '58px', // 125%
     },
-    // [paragraph1]
-    menu1: {
+    // [menu]
+    menuXS: {
       fontSize: '18px',
       fontWeight: '400',
       lineHeight: '22px', // 125%
     },
-    // [paragraph2]
+    menu: {
+      fontSize: '28px',
+      fontWeight: '400',
+      lineHeight: '34px', // 125%
+    },
+    // [paragraph1]
     paragraph1: {
       fontSize: '24px',
       fontWeight: 'bold',
       lineHeight: '29px', // 125%
     },
-    projects: {
+    paragraph2: {
+      fontSize: '18px',
+      fontWeight: '400',
+      lineHeight: '21.6px', // 125%
+    },
+    projectsXS: {
         fontSize: '26px',
         fontWeight: 'normal',
         lineHeight: '43px', // 125%
     },
+    projects: {
+      fontSize: '60px',
+      fontWeight: '400',
+      lineHeight: '72px', // 125%
+  },
     // [smallestException]
     // smallestException: {
     //   fontSize: '12px',

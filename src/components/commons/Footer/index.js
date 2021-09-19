@@ -1,6 +1,7 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import Image from 'next/image'
+import { breakpointsMedia } from '../../../theme/utils/breakpointsMedia';
 
 const FooterWrapper = styled.div`
     height: 68px;
@@ -12,14 +13,21 @@ const FooterWrapper = styled.div`
 const FooterIcon = styled.div`
     width: 224px;
     height: 68px;
-    margin-left: 75px;
+    
     background: #E9C46A;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap; 
-    /* padding-left: 24px;
-    padding-right: 24px; */
+
+    ${breakpointsMedia({
+    xs: css`
+        margin-left: 75px;
+        `,
+    md: css`
+        margin-left: 608px;
+        `,
+})}
 `;
 
 FooterIcon.Left = styled.div`
